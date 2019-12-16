@@ -1,1 +1,10 @@
 <h1> Não sou o cara </h1>
+<h2> Você já se certificou disso <span id="cont"></span> ></h2>
+
+<script>
+   window.alert("ssd");
+   let cnt = localStorage.getItem("contador");
+   if (!cnt) cnt = 1
+   document.getElementById("cont").innerHTML = cnt; 
+   localStorage.setItem('contador', cnt);
+</script>
